@@ -3015,6 +3015,32 @@ chart.appear(1000, 100);
     )
 
 
+
+    st.divider()
+
+    # ========================================================
+    # 4. CONCLUSION / PROJECT SUMMARY
+    # ========================================================
+
+    st.header("4. Conclusion / Project Summary")
+
+    st.success(
+        """
+        本專題以 **100,000 筆睡眠資料** 建立四分類睡眠障礙風險預測模型，
+        並比較 **8 種 Tree-based Machine Learning Models**。
+
+        最終選擇 **CatBoost** 作為核心模型，
+        因為其在整體分類表現與 **Severe 高風險辨識能力** 之間取得較佳平衡。
+
+        在 Feature Selection 階段，進一步由 **Full 30 Features → Top15**，
+        再考量實際使用者資料可取得性，形成 **13 個特徵的
+        Deployment-Ready Feature Set（Web13）**。
+
+        最終將 **Web13 CatBoost** 模型部署為 **Streamlit Web Application**，
+        讓使用者可直接輸入日常可取得資訊並進行風險預測。
+        """
+    )
+
 # ============================================================
 # PAGE 2
 # INPUT + PREDICTION
