@@ -3705,7 +3705,7 @@ elif page == "2. 輸入與預測":
 
         st.metric(
 
-            "模型信心分數",
+            "預測類別機率",
 
             f"{confidence:.2%}"
 
